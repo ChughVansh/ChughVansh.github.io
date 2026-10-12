@@ -5,9 +5,9 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<!-- Favicons. TODO(asset): these are template placeholders; replace them with the owner's own. -->
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" href="/images/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
+<!-- Favicons. ?v=5 makes browsers fetch the new icon instead of a cached one (raise the number after changing an icon). -->
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg?v=5">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=5" sizes="32x32">
+<link rel="icon" href="/images/favicon.ico?v=5">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png?v=5">
 {% if page.viz %}<link rel="modulepreload" href="/assets/js/chord-viz/index.js">{% endif %}
