@@ -13,7 +13,7 @@ I'm Vansh Chugh. I am currently a fourth-year undergraduate student at Knox Coll
 I really enjoy telling stories through my music, especially ones that are catered to a specific audience (more on the music page!). I have composed and performed several [15+ minute performance pieces](https://youtu.be/tGkx_-2FDhs). I have also released some music under a pseudonym. My [best performing single](https://www.youtube.com/watch?v=V1yAOLLeyXg) reached over 10k+ views in a week! More performances and snippets across instruments and venues can be found on the [Music page](/music/). Enjoy!
 
 <div id="chord-viz" data-chord-viz></div>
-<p class="note"><a href="https://www.youtube.com/shorts/N94jI1qEDAg" rel="noopener" aria-label="Inspiration: Every note secretly contains a chord, by MichaelsMusicMind">Inspiration</a></p>
+<p class="note"><a href="https://www.youtube.com/shorts/9zL--NBLQc0" rel="noopener" aria-label="Inspiration: What harmony looks like: simple ratios draw simple shapes, by MichaelsMusicMind">Inspiration</a></p>
 
 {% if site.data.updates.size > 0 %}
 <h2>Updates</h2>
