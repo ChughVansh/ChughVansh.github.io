@@ -1,0 +1,6 @@
+{% comment %}
+  Inline SVG icon from _data/icons.yml. Usage: {% include icon.html name="github" %}
+  The icon is decorative. The link that holds it carries the accessible name.
+{% endcomment %}
+{% assign icon = site.data.icons[include.name] %}
+<svg class="icon" viewBox="{{ icon.viewBox }}" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="{{ icon.path }}"/></svg>

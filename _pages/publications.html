@@ -1,0 +1,21 @@
+---
+layout: single
+title: "Publications"
+permalink: /publications/
+description: "Papers by Vansh Chugh on audio effects representation learning, music mixing, and music AI tools."
+---
+{% comment %}
+  Newest first. Each entry has a stable id (its filename) so /publications/#oh-sheet works.
+  To add a group heading later, wrap entries in a section with an h2 and keep the ids.
+{% endcomment %}
+<ul class="pub-list">
+  {% assign pubs = site.publications | sort: "order" %}
+  {% for pub in pubs %}
+  <li class="pub-list__item" id="{{ pub.slug }}">
+    {{ pub.content | markdownify | remove: "<p>" | remove: "</p>" }}
+    {% if pub.links %}
+    <br>{% for link in pub.links %}<a href="{{ link.url }}" rel="noopener">{{ link.label }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

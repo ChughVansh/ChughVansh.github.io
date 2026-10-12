@@ -1,0 +1,11 @@
+{% comment %}
+  A self-hosted vertical clip. Usage: {% include clip.html clip=clip %}
+  The file and its poster are in assets/video/. preload="none" so nothing downloads until play (MUS-3).
+{% endcomment %}
+{% assign clip = include.clip %}
+<figure class="media media--portrait">
+  <video class="media__frame" controls preload="none" width="720" height="1280"{% if clip.poster %} poster="/assets/video/{{ clip.poster }}"{% endif %}{% if clip.alt %} aria-label="{{ clip.alt }}"{% endif %}>
+    <source src="/assets/video/{{ clip.file }}" type="video/mp4">
+  </video>
+  {% if clip.caption %}<figcaption>{{ clip.caption }}{% if clip.instruments %}<span class="media__instruments">({{ clip.instruments }})</span>{% endif %}</figcaption>{% endif %}
+</figure>

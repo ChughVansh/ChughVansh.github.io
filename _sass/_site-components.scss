@@ -1,0 +1,50 @@
+/* Plain bordered entry: no shadow, no hover lift (PROJ-2). Used for projects and research. */
+.entry { margin: 0 0 var(--space-5); padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius); }
+.entry__title { margin: 0 0 var(--space-2); font-size: 1.125rem; }
+.entry__meta, .entry__tech { margin: 0 0 var(--space-2); color: var(--color-text-muted); font-size: 0.9375rem; }
+.entry__links { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-4); margin: 0; padding: 0; list-style: none; }
+.entry__points { margin: 0 0 var(--space-3); padding-left: 1.25rem; }
+.entry__media { margin: 0 0 var(--space-3); }
+.entry__media img { display: block; border: 1px solid var(--color-border); border-radius: var(--radius); }
+
+@media (min-width: 40rem) {
+  .entry--media { display: grid; grid-template-columns: 16rem minmax(0, 1fr); gap: var(--space-4); align-items: center; }
+  .entry--media .entry__media { margin: 0; }
+}
+
+/* Publications: plain list, newest first. Wrapped in a group so headings can be added later (PUB-4). */
+.pub-list { margin: 0 0 var(--space-6); padding: 0; list-style: none; }
+.pub-list__item { margin: 0 0 var(--space-4); }
+
+.updates { margin: 0; padding: 0; list-style: none; }
+.updates__item { margin: 0 0 var(--space-3); }
+.updates__date { color: var(--color-text-muted); font-size: 0.9375rem; margin-right: var(--space-2); }
+
+/* A link styled as a button. */
+.button {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-link);
+  border-radius: var(--radius);
+  color: var(--color-link);
+  text-decoration: none;
+}
+.button:hover { color: var(--color-bg); background: var(--color-link-hover); border-color: var(--color-link-hover); }
+
+/* Media: 16:9 for YouTube, 9:16 for vertical clips (MUS-5). */
+.media { margin: 0 0 var(--space-5); }
+.media__frame { display: block; width: 100%; border: 0; background: #000; }
+.media--landscape .media__frame { aspect-ratio: 16 / 9; }
+.media--portrait { max-width: 18rem; }
+.media--portrait .media__frame { aspect-ratio: 9 / 16; }
+figure.media { margin-left: 0; margin-right: 0; }
+.media figcaption { margin-top: var(--space-2); color: var(--color-text-muted); font-size: 0.9375rem; }
+.setlist { margin: 0 0 var(--space-3); padding-left: 1.5rem; }
+.setlist li { margin: 0 0 var(--space-1); }
+/* Vertical clips sit side by side when there is room. */
+.clips { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+.clips .media { flex: 0 1 18rem; margin-bottom: var(--space-3); }
+
+/* A small plain note, such as an attribution. */
+.note { margin: calc(-1 * var(--space-5)) 0 var(--space-5); color: var(--color-text-muted); font-size: 0.9375rem; }
+.media__instruments { display: block; }

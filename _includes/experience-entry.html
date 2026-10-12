@@ -1,0 +1,17 @@
+{% comment %}
+  One plain bordered entry for a job or research role. Usage: {% include experience-entry.html entry=item %}
+  Fields: id, role, org (or lab), advisor (optional), dates, points, url and url_label (optional).
+{% endcomment %}
+{% assign e = include.entry %}
+<article class="entry" id="{{ e.id }}">
+  <h3 class="entry__title">{{ e.role }}</h3>
+  <p class="entry__meta">{{ e.org | default: e.lab }}. {% if e.advisor %}Advisor: {{ e.advisor }}. {% endif %}{{ e.dates }}.</p>
+  <ul class="entry__points">
+    {% for point in e.points %}<li>{{ point }}</li>{% endfor %}
+  </ul>
+  {% if e.url %}
+  <ul class="entry__links">
+    <li><a href="{{ e.url }}" rel="noopener">{{ e.url_label | default: "Link" }}</a></li>
+  </ul>
+  {% endif %}
+</article>

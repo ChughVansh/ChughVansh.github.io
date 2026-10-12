@@ -1,0 +1,6 @@
+# Updates on the Home page, newest first. TODO(content): the owner adds entries.
+# Format (O-10): date, one sentence, optional link.
+#
+# - date: 2026-10-01
+#   text: One sentence about what happened.
+#   url: https://example.com   # optional

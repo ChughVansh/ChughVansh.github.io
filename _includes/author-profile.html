@@ -1,0 +1,22 @@
+{% assign author = site.author %}
+<div class="author">
+  <img class="author__photo" src="{{ '/images/' | append: author.avatar }}" alt="Portrait of {{ author.name }}" width="534" height="534" fetchpriority="high">
+  <p class="author__name">{{ author.name }}</p>
+  {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+  <ul class="author__links">
+    {% if author.github %}
+    <li><a href="https://github.com/{{ author.github }}" rel="noopener" aria-label="GitHub">{% include icon.html name="github" %}</a></li>
+    {% endif %}
+    {% if author.linkedin %}
+    <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}" rel="noopener" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a></li>
+    {% endif %}
+    {% comment %} Email and Google Scholar appear once their values are set in _config.yml (D-06, SHELL-6). {% endcomment %}
+    {% if author.email %}
+    <li><a href="mailto:{{ author.email }}" aria-label="Email">{% include icon.html name="email" %}</a></li>
+    {% endif %}
+    {% if author.googlescholar %}
+    <li><a href="{{ author.googlescholar }}" rel="noopener" aria-label="Google Scholar">{% include icon.html name="scholar" %}</a></li>
+    {% endif %}
+  </ul>
+  <p class="author__cv"><a href="/files/cv.pdf">CV (PDF)</a></p>
+</div>

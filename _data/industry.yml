@@ -1,0 +1,24 @@
+# Industry experience, shown on the Experience page under Research experience, newest first.
+# Text is from the CV. Do not change a number without the owner's approval.
+- id: edpi
+  role: Data Scientist / Backend Intern
+  org: EdPi Innovate
+  dates: Aug. 2025 to Sep. 2025
+  points:
+    - "Built the company’s single-source, configurable meeting transcription and summarization system using Whisper, FastAPI, and SpeechBrain, reducing documentation time by 80% and improving organizational knowledge capture."
+    - "Engineered a speaker identification pipeline using diarization, voice embeddings, and cosine-similarity matching against employee voice profiles, enabling 95%+ accurate, fully automated speaker labeling for 50+ meetings/month."
+    - "Developed an LLM-driven summarization and action-item extraction module that maps tasks to emails, improving follow-through by 60% and reducing admin workload by 3–4 hours/week through automated follow-up processing."
+
+- id: knox-advancement
+  role: Data Analyst Intern
+  org: Knox College, Office of Advancement
+  dates: Nov. 2024 to Jan. 2025
+  points:
+    - "Analyzed 50+ years and $50M+ in alumni donation data using non-parametric statistical tests and inflation-adjusted donor metrics to evaluate cohort and involvement-based differences, informing the 2025 segmentation strategy."
+
+- id: joe-moore
+  role: Data Management Intern
+  org: Joe Moore Strategies, LLC
+  dates: Nov. 2023 to Jan. 2024
+  points:
+    - "Designed a Google Sheets tracking system for 30,000+ clients by position, engagement level, and relationship to the company, migrating 1,500+ government-official contacts to Monday.com, reducing data retrieval time by 60%."

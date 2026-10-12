@@ -1,0 +1,32 @@
+---
+layout: single
+title: "Experience"
+permalink: /experience/
+description: "Research and industry experience and projects by Vansh Chugh: HARP, EdPi Innovate, Oh Sheet!, Whatcha Lookin' For?, and meeting-transcriber."
+---
+<h2>Research experience</h2>
+{% for item in site.data.research %}{% include experience-entry.html entry=item %}{% endfor %}
+
+<h2>Industry experience</h2>
+{% for item in site.data.industry %}{% include experience-entry.html entry=item %}{% endfor %}
+
+<h2>Projects</h2>
+{% assign projects = site.portfolio | sort: "order" %}
+{% for p in projects %}
+<article class="entry{% if p.image %} entry--media{% endif %}" id="{{ p.slug }}">
+  {% if p.image %}
+  <div class="entry__media">
+    <img src="/assets/img/projects/{{ p.image }}" alt="{{ p.image_alt }}" width="{{ p.image_width }}" height="{{ p.image_height }}" loading="lazy">
+  </div>
+  {% endif %}
+  <div>
+    <h3 class="entry__title"><a href="{{ p.demo | default: p.source }}" rel="noopener">{{ p.title }}</a></h3>
+    <p>{{ p.description }}</p>
+    <ul class="entry__links">
+      {% if p.demo %}<li><a href="{{ p.demo }}" rel="noopener">Demo</a></li>{% endif %}
+      {% if p.source %}<li><a href="{{ p.source }}" rel="noopener">Source</a></li>{% endif %}
+      {% if p.paper %}<li><a href="/publications/#{{ p.paper }}">Related paper</a></li>{% endif %}
+    </ul>
+  </div>
+</article>
+{% endfor %}

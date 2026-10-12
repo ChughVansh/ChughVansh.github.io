@@ -1,0 +1,160 @@
+# Music page content. Add an entry, save, and it shows up.
+
+# Select Performances, in the order shown. Every field except title is optional.
+#   title:         name of the piece
+#   composer:      who wrote it
+#   event:         the concert or event it was part of
+#   group:         the group you performed with
+#   venue:         where it was performed
+#   year:          year (or a full date as text)
+#   role:          what you did (instrument, voice, or part)
+#   setlist:       songs in the video. Each has a title, and may have artist, year,
+#                  start (m:ss, makes the title link to that moment but is not shown)
+#                  and role (when it differs from yours for the whole piece)
+#   note:          one plain sentence, if useful
+#   youtube:       the video id, the part after v= in the URL (or after youtu.be/).
+#                  Test that the embed actually plays on the page. A video can look
+#                  fine to YouTube's lookup and still block embedding. If it does,
+#                  use link instead.
+#   youtube_title: the video's title on YouTube, used as the embed's accessible name
+#   link, link_label: a page about the event or the piece
+performances:
+  - title: "Love JCQ"
+    role: "Keyboard and vocals"
+    venue: "Smokin' Willies BBQ - Barbecue Restaurant & Event Venue, Galesburg IL"
+    year: "April 2026"
+    note: "Love JCQ is the band. Video from the Knox College Music Department."
+    # Embedding is blocked for this video (the player says "This video is unavailable"),
+    # so it links out instead. If the channel turns embedding on, use youtube: qQHboLsLl4g.
+    link: "https://www.youtube.com/watch?v=qQHboLsLl4g"
+    link_label: "Watch on YouTube"
+    # start is minutes:seconds in the video. Leave it out to link to the beginning.
+    setlist:
+      - { title: "Proud Mary", artist: "Tina Turner", year: 1993, start: "0:00" }
+      - { title: "Don't Let Me Down", artist: "The Beatles", year: 1970, start: "5:11" }
+      - { title: "If I Get High", artist: "Nothing But Thieves", year: 2015, start: "8:30" }
+      - { title: "Late Nights & Heartbreak", artist: "Hannah Williams & The Affirmations", year: 2016, start: "12:12" }
+      - { title: "Forget You", artist: "CeeLo Green", year: 2010, start: "16:48" }
+      - { title: "Lovely Day", artist: "Bill Withers", year: 1977, start: "22:06" }
+      - { title: "Can't Take My Eyes Off You", artist: "Frankie Valli", year: 1967, start: "26:09" }
+
+  - title: "Love MCQ"
+    role: "Keyboard and vocals"
+    venue: "Smokin' Willies BBQ - Barbecue Restaurant & Event Venue, Galesburg IL"
+    year: "November 2025"
+    note: "Video from the Knox College Music Department."
+    link: "https://www.youtube.com/watch?v=nAUERSQGUJg"
+    link_label: "Watch on YouTube"
+    setlist:
+      - { title: "Leave the Door Open", artist: "Silk Sonic (Bruno Mars, Anderson .Paak)", year: 2021, start: "0:00" }
+      - { title: "Cowboy Nudes", artist: "Geese", year: 2023, start: "3:11" }
+      - { title: "Movin' Out (Anthony's Song)", artist: "Billy Joel", year: 1977, start: "6:34" }
+      - { title: "Dark Necessities", artist: "Red Hot Chili Peppers", year: 2016, start: "11:06" }
+      - { title: "Superstition", artist: "Stevie Wonder", year: 1972, start: "15:57" }
+      - { title: "Dreams", artist: "Fleetwood Mac", year: 1977, start: "20:08" }
+
+  - title: "Chamak"
+    composer: "Reena Esmail"
+    event: "A Passport to the World"
+    group: "Monmouth College Wind Ensemble"
+    role: "Tabla"
+    venue: "Kasch Performance Hall, Dahl Chapel and Auditorium, Monmouth College, IL"
+    year: "March 6, 2025"
+    link: "https://www.monmouthcollege.edu/live/news/5239-a-passport-to-the-world"
+    link_label: "Monmouth College page about the event"
+    # TODO(asset): a recording of this performance, if there is one.
+
+  - title: "Jugalbandi"
+    group: "Terpsichore Dance Collective"
+    role: "Tabla accompanist for a dance piece"
+    year: "February 2025"
+    venue: "Harbach Theatre, Ford Center for Fine Arts, Knox College, Galesburg, IL"
+    note: "A jugalbandi performance on campus."
+    clips:
+      - file: jugalbandi-1.mp4
+        poster: jugalbandi-1.jpg
+        alt: "A dancer in a red costume on a purple-lit stage, with a tabla player seated to the left and the audience in the foreground."
+      - file: jugalbandi-2.mp4
+        poster: jugalbandi-2.jpg
+        alt: "A dancer in a red costume performing on a purple-lit stage while a tabla player sits at the side."
+
+  - title: "Bush Administration"
+    role: "Keyboard and vocals"
+    venue: "Galesburg Community Arts Center"
+    year: "November 2024"
+    note: "Bush Administration is the band. The audio is faulty until 12:00 in the video. Video from the Knox College Music Department."
+    # Embedding is blocked for this video, so it links out instead.
+    link: "https://www.youtube.com/watch?v=8_PRAxXw9Ew"
+    link_label: "Watch on YouTube"
+    setlist:
+      - { title: "I Will Survive", artist: "Gloria Gaynor", year: 1978, start: "0:00", role: "Keyboard" }
+      - { title: "Waves", artist: "Melt", year: 2020, start: "5:20", role: "Keyboard" }
+      - { title: "Redbone", artist: "Childish Gambino", year: 2016, start: "9:38", role: "Vocals" }
+      - { title: "Come Down", artist: "Anderson .Paak", year: 2016, start: "15:50", role: "Vocals" }
+
+  - title: "SMILF"
+    venue: "Gizmo Restaurant, Galesburg, IL"
+    role: "Keyboard, and vocals on two songs"
+    year: "May 2024"
+    note: "Video from the Knox College Music Department. Its title on YouTube is \"SMILF - Knox Rocks Sp 24\"."
+    # Embedding is blocked for this video, so it links out instead.
+    link: "https://www.youtube.com/watch?v=oOhhZu3uW0A"
+    link_label: "Watch on YouTube"
+    setlist:
+      - { title: "Dance the Night", artist: "Dua Lipa", year: 2023, start: "0:00", role: "Keyboard" }
+      - { title: "Let's Stay Together", artist: "Al Green", year: 1972, start: "4:47", role: "Keyboard" }
+      - { title: "Peg", artist: "Steely Dan", year: 1977, start: "10:30", role: "Vocals" }
+      - { title: "Juice", artist: "Lizzo", year: 2019, start: "15:15", role: "Keyboard" }
+      - { title: "Everybody Wants to Rule the World (Lettuce's version, 2019)", artist: "Tears for Fears", start: "20:19", role: "Keyboard" }
+      - { title: "Another Star", artist: "Stevie Wonder", year: 1976, start: "26:38", role: "Vocals" }
+
+# YouTube videos that play on the page. The id is the part after v= in the URL.
+# note (optional) is the caption shown under the video.
+# Test each one on the page: a video can block embedding even when YouTube's lookup says it is fine.
+videos:
+  - { title: "Act III - Vansh Chugh", youtube: tGkx_-2FDhs, note: "A 15-minute Bollywood Love Medley" }
+  - { title: "1shh - Chhote Kamre, Bade Sapne ft. 1shh (Official Music Video)", youtube: V1yAOLLeyXg, note: "Yes, they're both me." }
+  - { title: "Vansh's EPIC Rap Mastery Project", youtube: 6XvXZ9tGRgc, note: "Lots of internal references. Video from THINK Global School, 2019." }
+
+# Instagram clips, self-hosted (MUS-3). Put the files in assets/video/ and list them here.
+# A performance can also hold clips: give it a clips: list in the same format.
+#   file:    the MP4 file name
+#   poster:  a JPG still, same name is fine (optional but recommended)
+#   caption: one plain sentence (optional)
+#   instruments: shown in parentheses on a new line under the caption (optional)
+#   alt:     what the clip shows, for people who cannot see it
+# Example:
+#   - file: clip-1.mp4
+#     poster: clip-1.jpg
+#     caption: "..."
+#     alt: "..."
+clips:
+  - file: kal-chaudhavi-ki-raat-thi.mp4
+    poster: kal-chaudhavi-ki-raat-thi.jpg
+    caption: "I promise you I'm trying to move on!"
+    instruments: "Tabla, Guitar, Harmonium"
+    alt: "Vansh singing at home with a pair of tabla in front of him. The lyrics in English appear as text on the screen."
+  - file: hawayei.mp4
+    poster: hawayei.jpg
+    caption: "Ohh... she mistakenly thinks she's forgettable"
+    instruments: "Piano"
+    alt: "Vansh sitting at a piano. The lyrics and their English interpretation appear as text on the screen."
+  - file: chaudhavin-ka-chaand.mp4
+    poster: chaudhavin-ka-chaand.jpg
+    caption: "How to respond appropriately when your partner asks you, \"Honey, how do I look?\""
+    instruments: "Harmonium, Tabla"
+    alt: "Vansh singing, sitting on the floor. The lyrics and their English translation appear as text on the screen."
+  - file: khud-se.mp4
+    poster: khud-se.jpg
+    caption: "I hope you show the same kindness and grace to yourself that you show others"
+    instruments: "Guitar"
+    alt: "Vansh playing guitar outdoors under trees. The English translation of the lyrics appears as text on the screen."
+  - file: pee-loon.mp4
+    poster: pee-loon.jpg
+    caption: "Nonchalance sucks!"
+    instruments: "Guitar"
+    alt: "Vansh playing guitar outdoors. The English interpretation of the lyrics appears as text on the screen."
+  - file: ismir-evening.mp4
+    poster: ismir-evening.jpg
+    caption: "Superstition @ ISMIR 2025!"
+    alt: "Vansh singing into a microphone on a stage with a band behind him, under yellow and purple lights."

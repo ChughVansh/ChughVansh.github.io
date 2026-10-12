@@ -1,0 +1,13 @@
+# Research experience, shown at the top of the Projects page (D-19, D-23).
+# Text is from the CV. Do not change a number without the owner's approval (RES-2).
+- id: harp
+  role: Research Intern
+  lab: Audio Information Research Lab, University of Rochester
+  advisor: Zhiyao Duan
+  dates: June 2026 to Sep. 2026
+  url: https://github.com/TEAMuP-dev/HARP/
+  url_label: HARP
+  points:
+    - "Deployed 25 of HARP’s 75 models in 3 months, pairing LLM-agent judgment with deterministic verification gates (dead-code pruning, preflight checks, live inference probing), cutting deployment time from hours to minutes."
+    - "Contributed to a systematic validation framework testing models across varied input lengths, sample rates, channel counts, and file types (95% of Spaces passing), and reviewed two 4,000+ line PRs, including the framework itself."
+    - "Built a JUCE C++ text-output component, extending output support beyond audio and MIDI files."

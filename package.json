@@ -1,0 +1,9 @@
+{
+  "name": "chughvansh-github-io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "bundle exec jekyll serve",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,44 @@
+/* All colors, fonts, sizes and spacing live here (brief section 9.4).
+   Change the look of the whole site by editing this file. */
+:root {
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-size-base: 1.0625rem;
+  --line-height-body: 1.6;
+
+  --color-bg: #ffffff;
+  --color-text: #24292f;
+  --color-text-muted: #57606a;
+  --color-border: #d0d7de;
+  --color-link: #0b5cab;
+  --color-link-hover: #084680;
+  --color-focus: #000000;
+  --color-key-active: var(--color-link);
+  --color-key-outline: #6e7781; /* 4.5:1 on white, above the 3:1 needed for UI outlines (1.4.11) */
+  --color-curve: var(--color-text);
+
+  --radius: 2px;
+  --measure: 70ch;
+  --transition: none; /* set a real value here if motion is added later (D-08) */
+
+  /* 4px base scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  --header-height: 5.25rem; /* two rows on phones, see the media query below */
+  --sidebar-width: 15rem;
+}
+
+/* Media queries cannot read custom properties, so the breakpoints are written
+   once, here, and repeated where used:
+     40rem  header fits on one row
+     64rem  sidebar moves to the left */
+@media (min-width: 40rem) {
+  :root { --header-height: 3.5rem; }
+}

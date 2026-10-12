@@ -1,0 +1,63 @@
+.viz { margin: var(--space-7) 0; }
+
+.viz__keyboard {
+  --white-count: 11;
+  --black-width: 0.6; /* as a fraction of one white key */
+  position: relative;
+  height: 9rem;
+  margin: 0 0 var(--space-4);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.viz__key {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0 0 var(--space-2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font: inherit;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.viz__key--white {
+  left: calc(var(--index) / var(--white-count) * 100%);
+  width: calc(100% / var(--white-count));
+  height: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-key-outline);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.viz__key--black {
+  z-index: 1;
+  left: calc(var(--boundary) / var(--white-count) * 100% - var(--black-width) * 100% / var(--white-count) / 2);
+  width: calc(var(--black-width) * 100% / var(--white-count));
+  height: 60%;
+  background: var(--color-text);
+  color: var(--color-bg);
+  border: 1px solid var(--color-text);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.viz__key.is-active { background: var(--color-key-active); border-color: var(--color-key-active); color: #fff; }
+
+/* Under 480px: one octave. The key map still works for the hidden keys. */
+@media (max-width: 29.99rem) {
+  .viz__keyboard { --white-count: 7; height: 7.5rem; }
+  .viz__key--extra { display: none; }
+}
+
+.viz__canvas {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
