@@ -4,7 +4,7 @@
     <nav aria-label="Main">
       <ul class="site-nav">
         {% for link in site.data.navigation.main %}
-        <li><a href="{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
+        <li><a href="{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}{% if link.new_tab %} target="_blank" rel="noopener" aria-label="{{ link.title }} (PDF, opens in a new tab)"{% endif %}>{{ link.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>

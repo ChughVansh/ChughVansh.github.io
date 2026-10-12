@@ -13,7 +13,7 @@
   justify-content: space-between;
   gap: var(--space-1) var(--space-5);
   max-width: 72rem;
-  min-height: var(--header-height);
+  min-height: calc(var(--header-height) - 1px); /* the header's 1px border makes up the rest */
   margin: 0 auto;
   padding: var(--space-2) var(--space-4);
 }
@@ -39,9 +39,9 @@
 
 /* Phones: the sidebar stacks above the main column with a smaller photo. */
 .author { display: grid; grid-template-columns: 5rem 1fr; gap: var(--space-1) var(--space-4); align-items: start; margin-bottom: var(--space-6); }
-.author__photo { grid-row: 1 / span 4; width: 5rem; height: 5rem; object-fit: cover; border-radius: 50%; }
+.author__photo { grid-row: 1 / span 3; width: 5rem; height: 5rem; object-fit: cover; border-radius: 50%; }
 .author__name { margin: 0; font-weight: 700; font-size: 1.25rem; }
-.author__bio, .author__cv { margin: 0; color: var(--color-text-muted); font-size: 0.9375rem; }
+.author__bio { margin: 0; color: var(--color-text-muted); font-size: 0.9375rem; }
 .author__links { display: flex; gap: var(--space-4); margin: 0; padding: 0; list-style: none; }
 .author__links a { display: inline-flex; padding: var(--space-1); color: var(--color-text); }
 .author__links a:hover { color: var(--color-link-hover); }

@@ -6,7 +6,7 @@ description: "Vansh Chugh: audio and machine learning research, projects, and mu
 ---
 Hello!!
 
-I'm Vansh Chugh. I am currently a fourth-year undergraduate student at Knox College, where I am majoring in Data Science and minoring in Mathematics and Popular Music Studies. Because of my experiences as a self-taught artist, I am focused on developing and democratizing technologies that assist musicians. My works span audio effects representation learning, real-time human–AI music co-creation, prompt-based music recommendation systems, deployed optical music recognition web apps, and democratization of MIR research.
+I'm Vansh Chugh. I am currently a fourth-year undergraduate student at Knox College, where I am majoring in Data Science and minoring in Mathematics and Popular Music Studies. Because of my experiences as a self-taught artist, I enjoy developing and democratizing technologies that assist musicians. My works span audio effects representation learning, real-time human–AI music co-creation, prompt-based music recommendation systems, deployed optical music recognition web apps, and democratization of MIR research.
 
 **I am currently applying for PhD applications for Fall 2027.**
 

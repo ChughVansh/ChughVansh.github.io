@@ -37,8 +37,13 @@
 
 /* Media queries cannot read custom properties, so the breakpoints are written
    once, here, and repeated where used:
+     27rem  header needs three rows below this
      40rem  header fits on one row
      64rem  sidebar moves to the left */
 @media (min-width: 40rem) {
   :root { --header-height: 3.5rem; }
+}
+/* Under 27rem the six links wrap onto two rows, so the header has three rows. */
+@media (max-width: 26.99rem) {
+  :root { --header-height: 6.5rem; }
 }

@@ -3,6 +3,7 @@
 #
 # "Experience" is the page at /experience/ (_pages/experience.html). Its projects come from
 # the template's collection named "portfolio" (_portfolio/); only the page and label were renamed.
+# new_tab: true opens a link in a new tab (used for the CV PDF).
 main:
   - title: "About"
     url: /
@@ -15,6 +16,10 @@ main:
 
   - title: "Music"
     url: /music/
+
+  - title: "CV"
+    url: /files/cv.pdf
+    new_tab: true
 
   - title: "Contact"
     url: /contact/
